@@ -1,0 +1,94 @@
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input__textArea {
+  border: none;
+  border-radius: 20px;
+  font-weight: 300;
+  font-family: "Inter";
+  color: var(--svg-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input__textArea::-moz-placeholder {
+  color: var(--svg-color);
+}
+
+.input__textArea::-webkit-input-placeholder {
+  color: var(--svg-color);
+}
+
+.input__textArea:focus {
+  outline: none;
+}
+
+.input__textArea[size="10"] {
+  padding: 7px 14px;
+  font-size: 10px;
+  background-size: 7px;
+}
+
+.input__textArea[size="20"] {
+  padding: 9px 18px;
+  font-size: 14px;
+}
+
+.input__textArea[size="30"] {
+  padding: 11px 20px;
+  font-size: 18px;
+}
+
+.input__textArea[size="40"] {
+  padding: 13px 22px;
+  font-size: 20px;
+}
+
+.input__textArea[size="50"] {
+  padding: 15px 24px;
+  font-size: 22px;
+}
+
+.input__textArea[size="60"] {
+  padding: 17px 26px 17px 56px;
+  font-size: 24px;
+  background-size: 30px;
+  background-position: 15px center;
+}
+
+.input__textArea[size="70"] {
+  padding: 19px 28px;
+  font-size: 26px;
+}
+
+.input__textArea[size="80"] {
+  padding: 21px 30px;
+  font-size: 28px;
+}
+
+.input__textArea[size="90"] {
+  padding: 23px 32px;
+  font-size: 30px;
+}
+
+.input__textArea[color="red"] {
+  background-color: var(--primary-input);
+}
+
+.input__textArea:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.input__svg {
+  position: absolute;
+  left: 17px;
+  width: 30px;
+  fill: var(--svg-color);
+}
+
+.input__textArea:hover .input__svg {
+  fill: var(--text);
+}

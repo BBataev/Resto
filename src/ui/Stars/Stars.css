@@ -1,0 +1,14 @@
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.colored {
+    stroke: var(--primary);
+    fill: var(--primary);
+}
+
+.notColored {
+    stroke: var(--primary);
+}
