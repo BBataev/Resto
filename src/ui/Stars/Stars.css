@@ -1,14 +1,32 @@
 .stars {
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.stars__star {
+    transition: stroke .1s ease-in-out, fill .1s ease-in-out;
 }
 
 .colored {
-    stroke: var(--primary);
-    fill: var(--primary);
+  stroke: var(--primary);
+  fill: var(--primary);
 }
 
 .notColored {
-    stroke: var(--primary);
+  stroke: var(--primary);
+}
+
+.based {
+  width: 17px;
+  height: 17px;
+}
+
+.moded {
+  width: 35px;
+  height: 35px;
+}
+
+.hovered {
+    stroke: var(--star-change);
+    fill: var(--star-change);
 }

@@ -7,7 +7,7 @@ export const Header = () => {
     <header>
       <div className="logo">
         <LogoIcon width={16} height={16} className="logo__icon" />
-        <span>LMC</span>
+        <span>Resto</span>
       </div>
       <div className="profile">
         <img alt="profile" src="/avatar.png" />

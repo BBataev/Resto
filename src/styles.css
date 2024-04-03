@@ -2,11 +2,18 @@
   font-family: "Inter", sans-serif;
 
   --primary: #eb8962;
-  --primary-input: #ffeee6;
+  --primary-input: #fff5f1;
+
 
   --svg-color: #bd6b4b;
 
   --text: #323232;
+  --text-descr: #696969;
+
+  --star-change: #fde55c;
+
+  --white: #fff;
+  --black: #000;
 }
 
 html,
