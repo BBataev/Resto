@@ -11,14 +11,14 @@
       "id": "2",
       "name": "The Burger Joint",
       "description": "American, 4.6 stars",
-      "raiting": 5,
+      "raiting": 4,
       "url": "/burger-joint.png"
     },
     {
       "id": "3",
       "name": "Pasta Express",
       "description": "American, 4.5 stars",
-      "raiting": 3,
+      "raiting": 4,
       "url": "/pasta-express.png"
     },
     {

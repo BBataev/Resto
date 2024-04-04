@@ -38,6 +38,14 @@ export const Stars: FC<StarsProps> = ({ id, rating, size, change }) => {
     setHoveredStar(starId);
   };
 
+  const handleStarClick = (starId: number) => {
+    if (change === "can") 
+    {
+      updateRating.mutate({ id, raiting: starId })
+    }
+  };
+
+
   return (
     <div className="stars">
       {stars.map((Star) => (
@@ -58,9 +66,7 @@ export const Stars: FC<StarsProps> = ({ id, rating, size, change }) => {
             } ${size === "based" ? `based` : `moded`}`}
             onClick={() => {
               {
-                change === "can"
-                  ? (updateRating.mutate({ id, raiting: Star.id }))
-                  : "";
+                handleStarClick(Star.id)
               }
             }}
           />
