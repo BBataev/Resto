@@ -25,6 +25,7 @@ export const Stars: FC<StarsProps> = ({ id, rating, size, change }) => {
   );
 
   const [hoveredStar, setHoveredStar] = useState<number | null>(null);
+  const [ratingModal, setRatingModal] = useState(rating);
 
   const stars = [
     { star: starIcon, id: 1 },
@@ -39,12 +40,11 @@ export const Stars: FC<StarsProps> = ({ id, rating, size, change }) => {
   };
 
   const handleStarClick = (starId: number) => {
-    if (change === "can") 
-    {
-      updateRating.mutate({ id, raiting: starId })
+    if (change === "can") {
+      updateRating.mutate({ id, raiting: starId });
+      setRatingModal(starId);
     }
   };
-
 
   return (
     <div className="stars">
@@ -60,14 +60,18 @@ export const Stars: FC<StarsProps> = ({ id, rating, size, change }) => {
         >
           <Star.star
             className={`stars__star ${
-              Star.id <= rating ? "colored" : "notColored"
+              change === "can"
+                ? Star.id <= ratingModal
+                  ? "colored"
+                  : "notColored"
+                : Star.id <= rating
+                ? "colored"
+                : "notColored"
             } ${
               hoveredStar !== null && Star.id <= hoveredStar ? "hovered" : ""
             } ${size === "based" ? `based` : `moded`}`}
             onClick={() => {
-              {
-                handleStarClick(Star.id)
-              }
+              handleStarClick(Star.id);
             }}
           />
         </div>
