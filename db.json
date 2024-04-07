@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Mama's Kitchen",
       "description": "American, 4.7 stars",
-      "raiting": 4,
+      "raiting": 5,
       "url": "/mamas-kitchen.png"
     },
     {
@@ -25,8 +25,36 @@
       "id": "4",
       "name": "Taco Fiesta",
       "description": "American, 4.8 stars",
-      "raiting": 3,
+      "raiting": 5,
       "url": "/taco-fiesta.png"
+    },
+    {
+      "id": "5",
+      "name": "Dr. Zivago",
+      "description": "Russian, 4.7 stars",
+      "raiting": 5,
+      "url": "/drzhivago_ru.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Oblomov",
+      "description": "Russian, 4.1 stars",
+      "raiting": 4,
+      "url": "/restoblomov_ru.jpg"
+    },
+    {
+      "id": "7",
+      "name": "White Rabbit",
+      "description": "Russian, 4.5 stars",
+      "raiting": 4,
+      "url": "/whiterabbitmoscow_ru.jpg"
+    },
+    {
+      "id": "8",
+      "name": "ERWIN",
+      "description": "Russian, 4.3 stars",
+      "raiting": 5,
+      "url": "/rekamoreokean_ru.jpg"
     }
   ]
 }

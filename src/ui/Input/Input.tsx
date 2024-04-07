@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Search from "../../assets/search.svg?react";
 
-import './Input.css';
+import "./Input.css";
 
 interface InputProps {
   placeholder?: string;
@@ -10,7 +10,8 @@ interface InputProps {
   color?: string;
   isDisabled?: boolean;
   isLoading?: boolean;
-  onInput?: () => {};
+  onInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
 }
 
 export const Input: FC<InputProps> = ({
@@ -20,18 +21,22 @@ export const Input: FC<InputProps> = ({
   type = "text",
   isDisabled,
   isLoading,
+  onInput,
+  value,
 }) => {
   return (
     <div className="input">
-        <Search className="input__svg" />
-        <input
-          className="input__textArea"
-          color={color}
-          size={size}
-          type={type}
-          placeholder={placeholder}
-          disabled={isDisabled || isLoading}
-        />
+      <Search className="input__svg" />
+      <input
+        className="input__textArea"
+        color={color}
+        size={size}
+        type={type}
+        placeholder={placeholder}
+        disabled={isDisabled || isLoading}
+        onChange={onInput}
+        value={value}
+      />
     </div>
   );
 };

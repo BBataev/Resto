@@ -99,3 +99,11 @@
     font-size: 18px;
     color: var(--text-descr);
 }
+
+.nothingFound {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--text-descr);    
+}
